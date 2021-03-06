@@ -1,13 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
 body {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, sans-serif;
+  background: #039be5;
+  font-family: "Syne", sans-serif;
 }
-
-input {
-  max-width: 500px;
-}
-
 .gray {
   color: #828282;
 }
@@ -15,7 +12,50 @@ input {
 .orange {
   background-color: #ff6600;
 }
+.card {
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 1rem;
+  border: 1px solid #666;
+  box-shadow: 5px 5px 15px 0px #ddd;
+}
+.cardtitle {
+  font-size: 1.1rem;
+}
+.cardtitle a:hover {
+  text-decoration: underline;
+  text-decoration-color: #828282;
+}
+.countIndex {
+  font-size: 25px;
+}
 
+.vote-button {
+  font-size: 14px;
+  padding: 3px;
+  border: 1px solid #666;
+  cursor: pointer;
+  color: #666;
+  margin-left: 0.25rem;
+}
+.pageTitle {
+  font-size: 30px;
+}
+.inputSearch {
+  padding:12px;
+  font-size: 14px;
+  flex-grow: 1;
+}
+.addBtn{
+  width: 100%;
+  
+}
+.buttonSearch {
+  padding:12px;
+  font-size: 14px;
+  flex-shrink: 1;
+}
 .background-gray {
   background-color: rgb(246, 246, 239);
 }
@@ -29,7 +69,7 @@ input {
 }
 
 .button {
-  font-family: monospace;
+  font-family: inherit;
   font-size: 10pt;
   color: black;
   background-color: buttonface;
@@ -60,43 +100,49 @@ input {
 }
 
 .header {
-  background-color: #ff6600;
+  height: 70px;
+  background-color: #030749;
   white-space: nowrap;
-  padding: 0.25rem;
-  color: black;
+  padding: 1rem;
+  color: white;
   justify-content: space-between;
   display: flex;
+  align-items: center;
 }
-
+.header .flex {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
 .header-title {
-  font-weight: 700;
-  margin-left: 0.25rem;
-  margin-right: 5px;
-  color: black;
+  font-size: larger;
+  margin-left: 0.5rem;
+  margin-right: 0.8rem;
+  color: white;
   text-decoration: none;
 }
 
 .header-link {
   margin-left: 0.2rem;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .header-button {
   margin-left: 0.25rem;
-  color: black;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
 .header-name {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .divider {
   margin-left: 0.25rem;
-  color: black;
+  color: white;
 }
 
 .link {
@@ -120,8 +166,10 @@ textarea {
 }
 
 .route-container {
-  background-color: rgb(246, 246, 239);
+  background-color: rgb(255, 251, 251);
+  backdrop-filter: blur(10px);
   padding-left: 1rem;
+  height: calc(100vh - 70px);
   padding-right: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -135,12 +183,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.vote-button {
-  font-size: 11px;
-  color: #828282;
-  margin-left: 0.25rem;
+  justify-content: center;
 }
 
 .forgot-password {
@@ -148,9 +191,8 @@ textarea {
 }
 
 .logo {
-  width: 20px;
-  height: 18px;
-  border: 1px solid white;
+  width: 30px;
+  height: 30px;
   margin: 0;
 }
 
@@ -168,5 +210,4 @@ textarea {
   margin: 0.5rem 0;
   width: 100%;
   margin-bottom: 0.2em;
-  max-width: 500px;
 }
